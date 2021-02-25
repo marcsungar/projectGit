@@ -6,7 +6,7 @@ public class ProgramMain {
 
     public static void main(String[] args) {
         int day , month , year , ddmmyyyy;
-
+        
         System.out.print("day/month/year :");
         ddmmyyyy = keyboard.nextInt();
 
