@@ -1,6 +1,18 @@
+import java.util.Scanner;
+
 public class ProgramMain {
+
+    static Scanner keyboard = new Scanner(System.in);
+
     public static void main(String[] args) {
-        int day = 13, month =9, year =2021;
+        int day , month , year , ddmmyyyy;
+
+        System.out.print("day/month/year :");
+        ddmmyyyy = keyboard.nextInt();
+
+        day = ddmmyyyy/1000000;
+        month = ddmmyyyy%10000;
+        year = (ddmmyyyy/10000)%100;
 
         String stDat = BirthDay(day, month, year);
         System.out.println(stDat);
